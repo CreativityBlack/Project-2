@@ -23,7 +23,7 @@ read pmrNumber
 
  echo "Preload or Activation"
 read preloadActivation
-
+   
 
 #DS8K Product
 if ("$productName" == DS8K) [
