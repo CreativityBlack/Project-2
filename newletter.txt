@@ -1,0 +1,19 @@
+Hello,
+
+This email is to inform you that I will be connecting to the following machine in approximately 30 minutes in order to perform health checks and ensure it is ready for a code update:
+•    TYPE-MODEL-SERIAL (2834-985-75#####)
+◦    IBM Ticket:
+◦    PMR:
+As part of the health checks, I will be performing the following actions:
+•    Running End of Call
+•    Checking for serviceable events
+•    Running CDA Preverify
+•    Downloading and installing PFE_CCL_PreCheck_v1.0
+◦    This is a bundle ICS that will make several non-disruptive checks to confirm machine is ready for code upgrade. It includes the following ICS images when applicable:
+▪    CSE_DASearchMissingExt_v1.1
+▪    CSE_DAOrphanCheck_v1.1
+▪    CSE_SyncIOLinkCheck_v1.0
+▪    PFE_Console_Hard_Drive_Test_v1.1
+▪    PFE_RCL_CallHome_Check_v1.0
+◦    Note! If the current code level is below 88.33.34.0, the HMC(s) may need to be rebooted to ensure that remote downloads work properly. If you do not want me to reboot the HMC(s) at this time, please let me know right away.
+These health checks are expected to take up to 60 minutes, but may take longer depending on the status and hardware of the machine. I will inform you once these health checks are complete or if I run into any issues. Please let me know if you have any questions and I will be more than happy to help.
