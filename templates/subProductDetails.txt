@@ -1,0 +1,86 @@
+Confirmation emails
+1.	DS8000 Confirmation
+2.	Tape Confirmation
+3.	A9000 Confirmation
+4.	Flash Confirmation
+
+Engineering changes
+1.	DS8000 EC Starting
+2.	DS8000 EC Completed
+3.	Hydra VTDs Starting
+4.	Hydra VTDs Completed
+5.	A9K iFix Starting
+6.	A9K iFix Connected
+7.	A9K iFix Completed
+
+DS8000 Standard 
+1.	PMR request form
+2.	Health check only starting
+3.	Health check only completed
+4.	Pre-load Connecting
+5.	Pre-load starting
+6.	Health check complete and download begins
+	Download takes longer than 1 hour
+7.	Download completed, distribution starts
+8.	Distribution completed (End of pre-load)
+9.	Activation connecting
+10.	Activation phase starts, HMC 1 update
+	HMC 1 Updated, HMC 2 Update Began
+11.	HMC(s) updated, starting activation on the LPARs
+	Periodic Activation Update
+12.	Activation completed, starting ICS install
+13.	ICS and clean up and final checks completed (end of activation) 
+
+DS8000 Transformation 
+1.	PMR request form
+2.	Health check only starting
+3.	Health check only completed
+4.	Pre-load connect
+5.	Pre-load starting
+6.	Health check complete and download begins
+	Download takes longer than 1 hour
+7.	Download completed, begin HMC 1 upgrade
+8.	HMC 1 completed, began HMC 2 upgrade
+9.	HMC(s) Upgraded, code distribution begins
+10.	Code Distribution Completed (End of pre-load)
+11.	Activation connect
+12.	Starting activation on the LPARs
+	 Periodic code activation update
+13.	Activation completed, starting ICS install
+14.	ICS and clean up and final checks completed (end of activation)
+
+Hydra
+1.	PMR Request Form
+2.	Health check connecting
+3.	Health check only started
+4.	Health check only completed
+5.	Pre-load connecting
+6.	Pre-load started
+7.	Files transfer update (Hourly)
+8.	Files transfer finish, starting health check
+9.	Health checks finished (end of pre-load)
+10.	Activation connecting
+11.	Activation started (service mode)
+12.	Act_cnc started
+13.	Act_cnc completed, act_go started (no return)
+14.	Act_go completed, act_finis started
+✴	act_finis update
+15.	Act_finis completed, starting vtd_execs
+16.	Vtd_execs installed, rebooting cluster, running final checks
+17.	Final checks completed (end of activation)
+
+A9000
+1.	Pre-load Connecting
+2.	Pre-load Started
+3.	Pre-load Completed
+4.	Activation Connecting
+5.	Activation Started/Pre-Upgrade Checks
+6.	System Upgrade Started
+7.	Upgrade Progress
+8.	Upgrade Completed (End of Activation)
+
+FS9100
+1.	File upload and upgrade test begins
+2.	File upload and upgrade test finishes
+3.	Upgrade begins
+4.	Upgrade completed
