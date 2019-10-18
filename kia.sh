@@ -17,23 +17,52 @@ main_menu () {
     printf "\n"
     read -p "Enter choice: " choice
 
-    x=$(grep -w "$choice" templates/products.txt | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
+    # x=$(grep -w "$choice" templates/products.txt | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
 }
 
 subProducts () {
     printf "\n"
     echo "---------------SUB-MENU---------------------"
-    awk "BEGIN{RS=ORS="\n\n";FS=OFS="\n"}/$x/" templates/subProductDetails.txt;
-    
+
+    case $choice in
+    1)
+        file=confirmationEmails.txt
+        cat templates/subProducts/confirmationEmails.txt;;
+    2) 
+        file=engineeringChanges.txt
+        cat templates/subProducts/engineeringChanges.txt;;
+    3)
+        file=DS8KStandard.txt
+        cat templates/subProducts/DS8KStandard.txt;;
+    4)
+        file=DS8KTransformation.txt
+        cat templates/subProducts/DS8KTransformation.txt;;
+    5)
+        file=hydraProduct.txt
+        cat templates/subProducts/hydraProduct.txt;;
+    6)
+        file=A9000Product.txt
+        cat templates/subProducts/A9000Product.txt;;
+    7)
+        file=FS9100Product.txt
+        cat templates/subProducts/FS9100Product.txt;;
+    esac
+    # awk "BEGIN{RS=ORS="\n\n";FS=OFS="\n"}/$x/" templates/subProductDetails.txt;
+    # echo $text
     # code below will output everything except matching line
     # awk "BEGIN{RS=ORS="\n\n";FS=OFS="\n"}/$x/" templates/subProductDetails.txt | grep -v "$x";
     printf "\n"
-    printf "\n"
     read -p "Enter choice: " schoice
+}
 
-    y=$(grep -w "$schoice" templates/subProductDetails.txt | head -1 | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
-    echo $y
+emailTemplate () {
+    printf "/n"
+    echo "------------------EMAIL---------------------" 
+
+    emailName=$(grep -w "$schoice" templates/subProducts/$file | head -1 | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
+    echo $emailName
 }
 
 main_menu
 subProducts
+emailTemplate

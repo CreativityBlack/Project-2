@@ -1,0 +1,5 @@
+FS9100 Product
+1.	File upload and upgrade test begins
+2.	File upload and upgrade test finishes
+3.	Upgrade begins
+4.	Upgrade completed

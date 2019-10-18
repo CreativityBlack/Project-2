@@ -1,0 +1,5 @@
+Confirmation emails
+1.	DS8000 Confirmation
+2.	Tape Confirmation
+3.	A9000 Confirmation
+4.	Flash Confirmation
