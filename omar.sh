@@ -41,5 +41,5 @@ sed -n '336,354p' Templates.txt > newletter.txt
 }
 
 #main_menu
-#find_replace
+find_replace
 

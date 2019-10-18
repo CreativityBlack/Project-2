@@ -26,54 +26,55 @@ read preloadActivation
    
 
 #DS8K Product
-if ("$productName" == DS8K) [
+if [ "$productName" == DS8K ] 
 
     echo "What type of Load?"
 read typeofLoad
 
+then
 
+    if [ "$typeofLoad" == standard ] 
 
-    if ("$typeofLoad" == standard) [
+    then 
+        
 
-
-
-     if ("$preloadActivation" == preload) [
-
+     if [ "$preloadActivation" == preload ] 
+then
 #need to copy the email and change the email by putting in all the typ, model, serial, ibm ticket, pmr
+# copies seleted template from file and makes new file with selected text.
+find_replace () {
+sed -n '336,354p' Templates.txt > newletter.txt
+#$sed 's/unix/linux/' newletter.txt
 
-
-        ]
-    else 
-     if("$preloadActivation" == activation) [
-
-        ]
-    then 
-        fi
-    ]
-else 
-    if ("$typeofLoad" == transformation) [
-
-
-
-     if ("$preloadActivation" == preload) [
-
-
-
-
-
-
-#need to copy the email and change the email by putting in all the typ, model, serial, ibm ticket, pmr
-        ]
-     else 
-    if("$preloadActivation" == Activation) [
-
-
-        ]
-    then 
-       fi
-    ]
-    then 
-fi
-
-]
+        
+     
+     if[ "$preloadActivation" == activation ] 
     
+        
+     
+       
+    
+ 
+    if [ "$typeofLoad" == transformation ] 
+    then 
+        
+
+
+     if [ "$preloadActivation" == preload ]  
+
+    then    
+        
+
+
+
+
+#need to copy the email and change the email by putting in all the typ, model, serial, ibm ticket, pmr
+        
+      
+    if[ "$preloadActivation" == Activation ] 
+
+
+     
+        fi
+    
+fi
