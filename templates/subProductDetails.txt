@@ -4,7 +4,7 @@ Confirmation emails
 3.	A9000 Confirmation
 4.	Flash Confirmation
 
-Engineering changes
+Engineering Changes
 1.	DS8000 EC Starting
 2.	DS8000 EC Completed
 3.	Hydra VTDs Starting
@@ -31,7 +31,7 @@ DS8000 Standard
 12.	Activation completed, starting ICS install
 13.	ICS and clean up and final checks completed (end of activation) 
 
-DS8000 Transformation 
+DS8000 Transformation
 1.	PMR request form
 2.	Health check only starting
 3.	Health check only completed
@@ -49,7 +49,7 @@ DS8000 Transformation
 13.	Activation completed, starting ICS install
 14.	ICS and clean up and final checks completed (end of activation)
 
-Hydra
+Hydra Product
 1.	PMR Request Form
 2.	Health check connecting
 3.	Health check only started
@@ -69,7 +69,7 @@ Hydra
 16.	Vtd_execs installed, rebooting cluster, running final checks
 17.	Final checks completed (end of activation)
 
-A9000
+A9000 Product
 1.	Pre-load Connecting
 2.	Pre-load Started
 3.	Pre-load Completed
@@ -79,7 +79,7 @@ A9000
 7.	Upgrade Progress
 8.	Upgrade Completed (End of Activation)
 
-FS9100
+FS9100 Product
 1.	File upload and upgrade test begins
 2.	File upload and upgrade test finishes
 3.	Upgrade begins

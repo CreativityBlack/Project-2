@@ -18,19 +18,21 @@ main_menu () {
     read -p "Enter choice: " choice
 
     x=$(grep -w "$choice" templates/products.txt | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
-    #clear
 }
 
 subProducts () {
     printf "\n"
     echo "---------------SUB-MENU---------------------"
+    awk "BEGIN{RS=ORS="\n\n";FS=OFS="\n"}/$x/" templates/subProductDetails.txt;
+    
+    # code below will output everything except matching line
+    # awk "BEGIN{RS=ORS="\n\n";FS=OFS="\n"}/$x/" templates/subProductDetails.txt | grep -v "$x";
     printf "\n"
-    # grep -A 4 "$x" templates/subProductDetails.txt
-    # cat templates/subProductDetails.txt
-    # echo $x
-    # perl -00 -ne "print if /^$x\.\s+/" templates/subProductDetails.txt;
-    perl -00 -ne "print if /^$x\.\s+/" templates/subProductDetails.txt;
-    echo hello
+    printf "\n"
+    read -p "Enter choice: " schoice
+
+    y=$(grep -w "$schoice" templates/subProductDetails.txt | head -1 | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
+    echo $y
 }
 
 main_menu
