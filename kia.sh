@@ -45,6 +45,9 @@ subProducts () {
     7)
         file=FS9100Product.txt;;
     esac
+
+    x=$(grep -w "$choice" templates/products.txt | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
+    echo $x
     cat templates/subProducts/$file
     printf "\n"
     read -p "Enter choice: " schoice
@@ -53,7 +56,7 @@ subProducts () {
 
 emailTemplateQuestions () {
     echo "---------------QUESTIONS--------------------"
-    
+
 }
 
 # Will output email template according
