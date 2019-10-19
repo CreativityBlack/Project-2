@@ -1,117 +1,7 @@
-Email communication and milestones
-Contents
-Contents    1
-Automated emails    1
-Confirmation emails    1
-Engineering Changes    1
-DS8000 Standard    2
-DS8000 Transformation    2
-Hydra    2
-A9000    3
-FS9100    3
-Confirmation Emails    4
-Engineering Changes    4
-Email templates    5
-Automated emails
-1.    Request - Customer and Requestor will receive an automated email after submitting the booking
-2.    Confirmed - Customer and requester will receive an automated email when booking is confirmed by RCL Engineer
-3.    Customer will also receive automated emails when the booking is altered (i.e. when the SF ticket # is added to the booking or the date/time is changed)
-
-Confirmation emails
-1.    DS8000 Confirmation [email template]
-2.    Tape Confirmation [email template]
-3.    A9000 Confirmation [email template]
-4.    Flash Confirmation [email template]
-
-Engineering changes
-1.    DS8000 EC Starting [email template]
-2.    DS8000 EC Completed [email template]
-3.    Hydra VTDs Starting [email template]
-4.    Hydra VTDs Completed [email template]
-5.    A9K iFix Starting [email template]
-6.    A9K iFix Connected [email template]
-7.    A9K iFix Completed [email template]
-DS8000 Standard
-1.    PMR request form [email template]
-2.    Health check only starting [email template]
-3.    Health check only completed [email template]
-4.    Pre-load Connecting [email template]
-5.    Pre-load starting [email template]
-6.    Health check complete and download begins [email template]
-    Download takes longer than 1 hour [email template]
-7.    Download completed, distribution starts [email template]
-8.    Distribution completed (End of pre-load) [email template]
-9.    Activation connecting [email template]
-10.    Activation phase starts, HMC 1 update [email template]
-    HMC 1 Updated, HMC 2 Update Began [email template]
-11.    HMC(s) updated, starting activation on the LPARs [email template]
-    Periodic Activation Update [email template]
-12.    Activation completed, starting ICS install [email template]
-13.    ICS and clean up and final checks completed (end of activation) [email template]
-DS8000 Transformation
-1.    PMR request form [email template]
-2.    Health check only starting [email template]
-3.    Health check only completed [email template]
-4.    Pre-load connect [email template]
-5.    Pre-load starting [email template]
-6.    Health check complete and download begins [email template]
-    Download takes longer than 1 hour [email template]
-7.    Download completed, begin HMC 1 upgrade [email template]
-8.    HMC 1 completed, began HMC 2 upgrade [email template]
-9.    HMC(s) Upgraded, code distribution begins [email template]
-10.    Code Distribution Completed (End of pre-load) [email template]
-11.    Activation connect [email template]
-12.    Starting activation on the LPARs [email template]
-     Periodic code activation update [email template]
-13.    Activation completed, starting ICS install [email template]
-14.    ICS and clean up and final checks completed (end of activation) [email template]
-Hydra
-1.    PMR Request Form [email template]
-2.    Health check connecting [email template]
-3.    Health check only started [email template]
-4.    Health check only completed [email template]
-5.    Pre-load connecting [email template]
-6.    Pre-load started [email template]
-7.    Files transfer update (Hourly) [email template]
-8.    Files transfer finish, starting health check [email template]
-9.    Health checks finished (end of pre-load) [email template]
-10.    Activation connecting [email template]
-11.    Activation started (service mode) [email template]
-12.    Act_cnc started [email template]
-13.    Act_cnc completed, act_go started (no return) [email template]
-14.    Act_go completed, act_finis started [email template]
-✴    act_finis update [email template]
-15.    Act_finis completed, starting vtd_execs [email template]
-16.    Vtd_execs installed, rebooting cluster, running final checks [email template]
-17.    Final checks completed (end of activation) [email template]
-A9000
-1.    Pre-load Connecting [email template]
-2.    Pre-load Started [email template]
-3.    Pre-load Completed [email template]
-4.    Activation Connecting [email template]
-5.    Activation Started/Pre-Upgrade Checks [email template]
-6.    System Upgrade Started [email template]
-7.    Upgrade Progress [email template]
-8.    Upgrade Completed (End of Activation) [email template]
-FS9100
-1.    File upload and upgrade test begins [email template]
-2.    File upload and upgrade test finishes [email template]
-3.    Upgrade begins [email template]
-4.    Upgrade completed [email template]
-
-
-
-
-
-
-
-
-
+================================================================
 Confirmation Emails
-DS8000 Confirmation
-IBM
-Remote Code Load
-
+================================================================
+DS8000 Confirmation 
 Dear [client name],
 
 Thank you for requesting an appointment for DS8000 Remote Code Load.
@@ -123,11 +13,9 @@ Please review the additional information prior to any DS8880 code update CDA_888
 
 If you have any questions or need to reschedule, please call us at 1-800-IBM-SERV(426-7378), DAC code #91650 or reply to this email.
 Note! If the machine is running CSM embedded on the HMC, you will need to perform a takeover from the standby server prior to pre-load and activation RCL activities to ensure that access is maintained. If CSM is running from a stand-alone server, this notice does not apply. You can follow the steps found at https://ibm.biz/BdzbcQ on how to perform a takeover.
+@
 
 Tape Confirmation
-IBM
-Remote Code Load
-
 Dear [client name],
 
 Thank you for requesting an appointment for Tape Remote Code Load.
@@ -137,12 +25,9 @@ Your service booking using ticket number [CSP Case#] has been confirmed with the
 An RCL engineer will contact you before any activity. If you have any questions or need to reschedule, please call us at 1-800-IBM-SERV(426-7378), DAC code #91650 or reply to this email.
 
 Please note! PRIOR TO BEGINNING OF THE CODE UPGRADE PROCEDURE, YOU MUST STOP ALL ACTIVITY TO THE CLUSTER. IF THE CLUSTER IS PART OF A GRID, YOU MUST PLACE IT INTO SERVICE MODE. THE CLUSTER WILL NOT BE OPERATIONAL FOR I/O PROCESSES FOR THE DURATION OF THE CODE UPGRADE.
-
+@
 
 A9000 Confirmation
-IBM
-Remote Code Load
-
 Dear [client name],
 
 Thank you for requesting an appointment for A9000 Remote Code Load.
@@ -153,12 +38,9 @@ An RCL engineer will contact you before any activity. If you have any questions 
 
 Please note! If current version is lower than 12.3.0, Hyper Swap must be deactivated during the upgrade.
 If target bundle is 12.3.1 or higher, Hyper Scale Manager must be upgraded to version 5.5.1 or higher.
+@
 
 Flash Confirmation (V9000/FS9100/SVC-2147)
-IBM
-Remote Code Load
-
-
 Dear [client name],
 
 Thank you for requesting an appointment for [product] Remote Code Load.
@@ -166,11 +48,11 @@ Thank you for requesting an appointment for [product] Remote Code Load.
 Your service booking using ticket number [CSP Case#] has been confirmed with the details below.
 
 An RCL engineer will contact you before any activity. If you have any questions or need to reschedule, please call us at 1-800-IBM-SERV(426-7378), DAC code #91650 or reply to this email.
+@
 
-
-
+================================================================
 Engineering Changes
-
+================================================================
 DS8000 Engineering Change – EC Starting:
 
 Hello,
@@ -410,7 +292,7 @@ I will inform you once I connect and I will provide you with email updates throu
 
 Note! If the machine is running CSM embedded on the HMC, please perform a takeover from the standby server to ensure that access is maintained. If CSM is running from a stand-alone server, this notice does not apply. You can follow the steps found at https://ibm.biz/BdzbcQ on how to perform a takeover.
 
-
+@
 DS8000 Standard – Pre-Load Starting:
 
 Hello,
@@ -1455,7 +1337,7 @@ During this time, I will also be performing the following actions:
 The entire system check and code transfer process is expected to take 1-2 hours. I will inform you once the file has been transferred and the health checks have been completed. If you have any questions, please let me know and I will be more than happy to help.
 
 Note! The xRSC connection must be open for the duration of the pre-load.
-
+@
 A9000 – Pre-load Started:
 
 Hello,
