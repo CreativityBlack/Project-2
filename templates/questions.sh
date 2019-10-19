@@ -9,28 +9,26 @@ DS8KStandardConfirmation () {
     read -p "CSP Case #: " cspCase
 
     echo "
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>EMAIL TEMPLATE</title>
+	<title></title>
+	<link href='https://svc.webspellchecker.net/spellcheck31/lf/scayt3/ckscayt/css/wsc.css" rel="stylesheet' type='text/css' />
 </head>
-<body>
-Dear $clientName,
-
-Thank you for requesting an appointment for DS8000 Remote Code Load.
-
-Your service booking using ticket number $cspCase has been confirmed with the details below.
-An RCL engineer will contact you before any activity
-
-Please review the additional information prior to any DS8880 code update CDA_8880_CUS_INFO_v5.22.pdf
-If you have any questions or need to reschedule, please call us at 1-800-IBM-SERV(426-7378), DAC code #91650 or reply to this email.
-
-Note! If the machine is running CSM embedded on the HMC, you will need to perform a takeover from the standby server prior to pre-load and activation RCL activities to ensure that access is maintained.
-If CSM is running from a stand-alone server, this notice does not apply.
-
-You can follow the steps found at https://ibm.biz/BdzbcQ on how to perform a takeover.
-</body>
+<body aria-readonly='false'>Dear <strong>$clientName,</strong><br />
+&nbsp;<br />
+Thank you for requesting an appointment for DS8000 Remote Code Load.<br />
+&nbsp;<br />
+Your service booking using ticket number <strong>$cspCase</strong> has been confirmed with the details below.<br />
+An RCL engineer will contact you before any activity.<br />
+&nbsp;<br />
+Please review the additional information prior to any DS8880 code update <a href='https://www-01.ibm.com/support/docview.wss?uid=ibm10737923&amp;aid=1'>CDA_8880_CUS_INFO_v5.22.pdf</a><br />
+&nbsp;<br />
+If you have any questions or need to reschedule, please call us at <span style='color:#0000FF'><strong>1-800-IBM-SERV(426-7378), DAC code #91650</strong></span> or reply to this email.<br />
+<br />
+<span style='color:#FF0000'><strong>Note!</strong> </span><strong><span style='color:#FF0000'>If the machine is running CSM embedded on the HMC, you will need to perform a takeover from the standby server prior to pre-load and activation RCL activities to ensure that access is maintained. 
+<br />
+If CSM is running from a stand-alone server, this notice does not apply. You can follow the steps found at</span> </strong><a href='https://ibm.biz/BdzbcQ'><strong>https://ibm.biz/BdzbcQ</strong></a><strong> <span style='color:#FF0000'>on how to perform a takeover.</span></strong><br />
+&nbsp;</body>
 </html>
 " >> email.html
 }
