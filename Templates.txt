@@ -53,8 +53,7 @@ An RCL engineer will contact you before any activity. If you have any questions 
 ================================================================
 Engineering Changes
 ================================================================
-DS8000 Engineering Change – EC Starting:
-
+DS8000 EC Starting
 Hello,
 
 This email is to inform you that I will be connecting to the following machine at 00:00 (customer timezone) in order to perform the requested Engineering Change:
@@ -68,11 +67,10 @@ I will also be running the following health checks:
 •    End of Call
 •    Checking for serviceable events
 I will let you know once I have completed the installs or if I run into any unexpected events. If you have any questions, please let me know and I will be more than happy to help.
+@
 
 
-
-DS8000 Engineering Change – EC Completed:
-
+DS8000 EC Completed
 Hello,
 
 This email is to inform you that I have completed the Engineering Change on the following machine:
@@ -89,13 +87,11 @@ I also ran the following health checks:
 Thank you for completing the Engineering Change with the Remote Code Load team and thank you for choosing IBM.
 
 You may receive a one question survey based on your RCL experience and we would highly appreciate your feedback.
+@
 
 
 
-
-Hydra – VTD_Execs Starting
-
-
+Hydra VTDs Starting
 Hello,
 
 This email is to inform you that I will be connecting to the following machine at 00:00 (customer timezone) in order to install the requested VTD Exec(s):
@@ -110,10 +106,9 @@ During this time, I will install the following VTD Exec(s):
 •    VTD Exec 5
 •    VTD Exec 6
 I will let you know once I have completed the installs or if I run into any unexpected events. If you have any questions, please let me know and I will be more than happy to help.
+@
 
-
-Hydra – VTD_Execs Completed
-
+Hydra VTDs Complete
 Hello,
 
 This email is to inform you that I have completed the VTD Exec installs on the following machine:
@@ -130,10 +125,9 @@ During this time, I installed the following VTD Execs:
 Thank you for completing the VTD Exec installs with the Remote Code Load team and thank you for choosing IBM.
 
 You may receive a one question survey based on your RCL experience and we would highly appreciate your feedback.
+@
 
-A9000 – iFix Connecting
-
-
+A9K iFix Connecting
 Hello,
 
 This email is to inform you that I will be connecting to the following machine in approximately 30 minutes at 00:00 (customer timezone) in order to install the requested iFix(es):
@@ -148,18 +142,15 @@ The following iFix(es) will be installed:
 I will inform you once I connect to the machine and have begin to install the iFix(es). If you have any questions, please let me know and I will be more than happy to help.
 
 Note! The xRSC connection must be open for the duration of the iFix.
+@
 
-A9000 – iFix Started
-
-
+A9K iFix Starting
 Hello,
 
 This email is to inform you that I have connected to machine and have begun to install the iFix(es). This process is expected to take 60 minutes. If you have any questions, please let me know and I will be more than happy to help.
+@
 
-
-A9000 – iFix Completed
-
-
+A9K iFix Completed
 Hello,
 
 This email is to inform you that I have successfully installed the requested iFix(es) on the following machine:
@@ -173,7 +164,7 @@ The following iFix(es) were installed at this time:
 Thank you for using the Remote Code Load team and thank you for choosing IBM.
 
 You may receive a one question survey based on your RCL experience and we would highly appreciate your feedback.
-
+@
 
 Email templates
 
