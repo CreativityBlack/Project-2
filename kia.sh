@@ -1,12 +1,6 @@
 #!/bin/sh -x
 
-# Which Product
-# Standard || Transforamtion || Engineering Change
-# Preload || Activation
-
-# WHen will this start? - 30, 20, 10, now
-# What is the Target bundle
-
+# --------------------------PERSONAL NOTES----------------------------------------------------
 # --------------------------------------------------------------------------------------------
 # Command Below: retrieves just the text next to the choice chosen by user
 # x=$(grep -w "$choice" templates/products.txt | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
@@ -15,7 +9,9 @@
 # code below will output everything except matching line
 # awk "BEGIN{RS=ORS="\n\n";FS=OFS="\n"}/$x/" templates/subProductDetails.txt | grep -v "$x";
 # --------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------
 
+# Asks users to chose a main products
 main_menu () {
     echo "-------------------MENU---------------------"
     printf "\n"
@@ -27,6 +23,7 @@ main_menu () {
     read -p "Enter choice: " choice
 }
 
+# Based on users first choice, will ask user to pick specific email templates
 subProducts () {
     printf "\n"
     echo "---------------SUB-MENU---------------------"
@@ -54,6 +51,12 @@ subProducts () {
     printf "\n"
 }
 
+emailTemplateQuestions () {
+    echo "---------------QUESTIONS--------------------"
+    
+}
+
+# Will output email template according
 emailTemplate () {
     echo "------------------EMAIL---------------------" 
 
@@ -61,6 +64,7 @@ emailTemplate () {
     sed -n "/$emailName/,/@/p" Templates.txt | grep -v "@" | grep -v "$emailName"
 }
 
+# Calling function names
 main_menu
 subProducts
 emailTemplate
