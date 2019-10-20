@@ -121,4 +121,4 @@ case $choice in
         esac
 esac
 
-# open ./email.html
+open ./email.html
