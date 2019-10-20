@@ -1,24 +1,14 @@
-#!/bin/bash
-echo -n "" > email.html
 
-DS8KStandardConfirmation () {
-
-    echo "Please enter the following:"
-    read -p "Clients Name: " clientName
-
-    read -p "CSP Case #: " cspCase
-
-    echo "
 <html>
 <head>
 	<title></title>
-	<link href='https://svc.webspellchecker.net/spellcheck31/lf/scayt3/ckscayt/css/wsc.css" rel="stylesheet' type='text/css' />
+	<link href='https://svc.webspellchecker.net/spellcheck31/lf/scayt3/ckscayt/css/wsc.css rel=stylesheet' type='text/css' />
 </head>
-<body aria-readonly='false'>Dear <strong>$clientName,</strong><br />
+<body aria-readonly='false'>Dear <strong>Ki,</strong><br />
 &nbsp;<br />
 Thank you for requesting an appointment for DS8000 Remote Code Load.<br />
 &nbsp;<br />
-Your service booking using ticket number <strong>$cspCase</strong> has been confirmed with the details below.<br />
+Your service booking using ticket number <strong>A</strong> has been confirmed with the details below.<br />
 An RCL engineer will contact you before any activity.<br />
 &nbsp;<br />
 Please review the additional information prior to any DS8880 code update <a href='https://www-01.ibm.com/support/docview.wss?uid=ibm10737923&amp;aid=1'>CDA_8880_CUS_INFO_v5.22.pdf</a><br />
@@ -30,26 +20,4 @@ If you have any questions or need to reschedule, please call us at <span style='
 If CSM is running from a stand-alone server, this notice does not apply. You can follow the steps found at</span> </strong><a href='https://ibm.biz/BdzbcQ'><strong>https://ibm.biz/BdzbcQ</strong></a><strong> <span style='color:#FF0000'>on how to perform a takeover.</span></strong><br />
 &nbsp;</body>
 </html>
-" >> email.html
-}
 
-
-
-# Need to retrieve outside variables
-# Pseudo for Logic
-case $choice in
-    1)
-        case $schoice in
-            1)
-                DS8KStandardConfirmation;;
-            2)
-                TapeConfirmation;;
-            3) 
-                A9KConfirmation;;
-            4)
-                FlashConfirmation;;
-        2)
-        esac
-esac
-
-# cat email.html

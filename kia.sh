@@ -47,7 +47,6 @@ subProducts () {
     esac
 
     x=$(grep -w "$choice" templates/products.txt | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
-    echo $x
     cat templates/subProducts/$file
     printf "\n"
     read -p "Enter choice: " schoice
@@ -56,15 +55,20 @@ subProducts () {
 
 emailTemplateQuestions () {
     echo "---------------QUESTIONS--------------------"
-
+    
+    export choice
+    export schoice
+    . ./templates/questions.sh
 }
 
 # Will output email template according
 emailTemplate () {
     echo "------------------EMAIL---------------------" 
 
-    emailName=$(grep -w "$schoice" templates/subProducts/$file | head -1 | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
-    sed -n "/$emailName/,/@/p" Templates.txt | grep -v "@" | grep -v "$emailName"
+    # emailName=$(grep -w "$schoice" templates/subProducts/$file | head -1 | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
+    # sed -n "/$emailName/,/@/p" Templates.txt | grep -v "@" | grep -v "$emailName"
+
+    
 }
 
 # Calling function names
