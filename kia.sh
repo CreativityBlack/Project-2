@@ -1,4 +1,5 @@
 #!/bin/sh -x
+# ╰(✿´⌣`✿)╯ Bashing Script by Team O.K.2 ╰(✿´⌣`✿)╯
 
 # --------------------------PERSONAL NOTES----------------------------------------------------
 # --------------------------------------------------------------------------------------------
@@ -8,12 +9,14 @@
 # awk "BEGIN{RS=ORS="\n\n";FS=OFS="\n"}/$x/" templates/subProductDetails.txt;
 # code below will output everything except matching line
 # awk "BEGIN{RS=ORS="\n\n";FS=OFS="\n"}/$x/" templates/subProductDetails.txt | grep -v "$x";
+# emailName=$(grep -w "$schoice" templates/subProducts/$file | head -1 | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
+# sed -n "/$emailName/,/@/p" Templates.txt | grep -v "@" | grep -v "$emailName"
 # --------------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------
 
 # Asks users to chose a main products
 main_menu () {
-    echo "-------------------MENU---------------------"
+    echo "*✧.♡-----------------✿ MENU ✿--------------------♡.✧*"
     printf "\n"
     echo "Please choose a category"
     printf "\n"
@@ -26,7 +29,7 @@ main_menu () {
 # Based on users first choice, will ask user to pick specific email templates
 subProducts () {
     printf "\n"
-    echo "---------------SUB-MENU---------------------"
+    echo "*✧.♡---------------✿ SUB-MENU ✿--------------------♡.✧*"
 
     printf "\n"
     case $choice in
@@ -54,22 +57,12 @@ subProducts () {
 }
 
 emailTemplate () {
-    echo "---------------QUESTIONS--------------------"
+    echo "*✧.♡---------------✿ QUESTIONS ✿-------------------♡.✧*"
 
     export choice
     export schoice
     . ./templates/questions.sh
 }
-
-# Will output email template according
-# emailTemplate () {
-#     echo "------------------EMAIL---------------------" 
-
-#     # emailName=$(grep -w "$schoice" templates/subProducts/$file | head -1 | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
-#     # sed -n "/$emailName/,/@/p" Templates.txt | grep -v "@" | grep -v "$emailName"
-
-    
-# }
 
 # Calling function names
 main_menu

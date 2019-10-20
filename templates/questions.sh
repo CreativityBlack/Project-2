@@ -2,6 +2,7 @@
 echo -n "" > email.html
 cat email.html
 
+echo ""
 echo "Please enter the following:"
 
 DS8KStandardConfirmation () {
@@ -120,4 +121,4 @@ case $choice in
         esac
 esac
 
-open ./email.html
+# open ./email.html
