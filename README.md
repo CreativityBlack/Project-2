@@ -22,4 +22,7 @@ Explanation:
   I will send you the Template by email 
     
     
+----------------------------------------------------------------------------------------------------------------
+* Currently this project is only has templates available for `Confirmation Emails`.
 
+Please run `bash kia.sh` to start the program choose `1` for Menu and `Any provided # for Sub-Menu`.
