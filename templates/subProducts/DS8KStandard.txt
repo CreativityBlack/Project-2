@@ -1,0 +1,17 @@
+DS8000 Standard
+1.	PMR request form
+2.	Health check only starting
+3.	Health check only completed
+4.	Pre-load Connecting
+5.	Pre-load starting
+6.	Health check complete and download begins
+	Download takes longer than 1 hour
+7.	Download completed, distribution starts
+8.	Distribution completed (End of pre-load)
+9.	Activation connecting
+10.	Activation phase starts, HMC 1 update
+	HMC 1 Updated, HMC 2 Update Began
+11.	HMC(s) updated, starting activation on the LPARs
+	Periodic Activation Update
+12.	Activation completed, starting ICS install
+13.	ICS and clean up and final checks completed (end of activation) 

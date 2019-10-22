@@ -1,0 +1,9 @@
+A9000 Product
+1.	Pre-load Connecting
+2.	Pre-load Started
+3.	Pre-load Completed
+4.	Activation Connecting
+5.	Activation Started/Pre-Upgrade Checks
+6.	System Upgrade Started
+7.	Upgrade Progress
+8.	Upgrade Completed (End of Activation)

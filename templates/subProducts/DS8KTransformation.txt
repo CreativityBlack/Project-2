@@ -1,0 +1,17 @@
+DS8000 Transformation
+1.	PMR request form
+2.	Health check only starting
+3.	Health check only completed
+4.	Pre-load connect
+5.	Pre-load starting
+6.	Health check complete and download begins
+	Download takes longer than 1 hour
+7.	Download completed, begin HMC 1 upgrade
+8.	HMC 1 completed, began HMC 2 upgrade
+9.	HMC(s) Upgraded, code distribution begins
+10.	Code Distribution Completed (End of pre-load)
+11.	Activation connect
+12.	Starting activation on the LPARs
+	 Periodic code activation update
+13.	Activation completed, starting ICS install
+14.	ICS and clean up and final checks completed (end of activation)

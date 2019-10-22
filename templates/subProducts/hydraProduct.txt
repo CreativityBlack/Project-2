@@ -1,0 +1,19 @@
+Hydra Product
+1.	PMR Request Form
+2.	Health check connecting
+3.	Health check only started
+4.	Health check only completed
+5.	Pre-load connecting
+6.	Pre-load started
+7.	Files transfer update (Hourly)
+8.	Files transfer finish, starting health check
+9.	Health checks finished (end of pre-load)
+10.	Activation connecting
+11.	Activation started (service mode)
+12.	Act_cnc started
+13.	Act_cnc completed, act_go started (no return)
+14.	Act_go completed, act_finis started
+✴	act_finis update
+15.	Act_finis completed, starting vtd_execs
+16.	Vtd_execs installed, rebooting cluster, running final checks
+17.	Final checks completed (end of activation)
