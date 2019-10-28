@@ -1,4 +1,6 @@
 #!/bin/bash
+$choice=$1 
+$schoice=$2 
 echo -n "" > email.html
 cat email.html
 
@@ -117,8 +119,14 @@ case $choice in
                 A9KConfirmation;;
             4)
                 FlashConfirmation;;
-        2)
+            5)
+                echo "Please enter a valid input"
+                exit;;
+    2)
         esac
 esac
 
-open ./email.html
+echo "THis is choice: $choice"
+echo "This is schoice: $schoice"
+
+# open ./email.html
