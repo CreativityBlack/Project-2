@@ -25,4 +25,4 @@ Explanation:
 ----------------------------------------------------------------------------------------------------------------
 * Currently this project is only has templates available for `Confirmation Emails`.
 
-Please run `bash kia.sh` to start the program choose `1` for Menu and `Any provided # for Sub-Menu`.
+Please run `bash bashScript.sh` to start the program choose `1` for Menu and `Any provided # for Sub-Menu`.
