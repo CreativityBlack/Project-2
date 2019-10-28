@@ -24,14 +24,7 @@ main_menu () {
     printf "\n"
     printf "\n"
     read -p "Enter choice: " choice
-}
-
-# Based on users first choice, will ask user to pick specific email templates
-subProducts () {
-    printf "\n"
-    echo "*✧.♡---------------✿ SUB-MENU ✿--------------------♡.✧*"
-
-    printf "\n"
+    
     case $choice in
     1)
         file=confirmationEmails.txt;;
@@ -47,7 +40,20 @@ subProducts () {
         file=A9000Product.txt;;
     7)
         file=FS9100Product.txt;;
+    *)
+	    echo "****************Please enter a valid input"
+	    main_menu;;
     esac
+
+    subProducts
+}
+
+# Based on users first choice, will ask user to pick specific email templates
+subProducts () {
+    printf "\n"
+    echo "*✧.♡---------------✿ SUB-MENU ✿--------------------♡.✧*"
+
+    printf "\n"
 
     x=$(grep -w "$choice" templates/products.txt | awk -F '.' '{print $2}' | sed 's/^[ ]//g')
     cat templates/subProducts/$file
@@ -59,12 +65,11 @@ subProducts () {
 emailTemplate () {
     echo "*✧.♡---------------✿ QUESTIONS ✿-------------------♡.✧*"
 
-    export choice
-    export schoice
-    . ./templates/questions.sh
+    # export choice
+    # export schoice
+    . ./templates/questions.sh choice schoice
 }
 
 # Calling function names
 main_menu
-subProducts
 emailTemplate
