@@ -21,6 +21,8 @@ This repository will hold issues or requests related to current or new tools.
   
 </details>
 
+***
+
 ### **RCL Online Instructions**
 [Repository Link](https://github.ibm.com/systems-storage-tools/tools-issues-requests/issues/15)
 </br>
@@ -37,6 +39,8 @@ This repository will hold issues or requests related to current or new tools.
     * Description of Milestone 3
   
 </details>
+
+***
 
 ### **RETAIN Web API**
 [Repository Link](https://github.ibm.com/systems-storage-tools/tools-issues-requests/issues/14)
@@ -57,6 +61,8 @@ This repository will hold issues or requests related to current or new tools.
   
 </details>
 
+***
+
 ### **Integration of Opening CMVCs and RCL Problem Tracker**
 [Repository Link](https://github.ibm.com/systems-storage-tools/tools-issues-requests/issues/13)
 </br>
@@ -76,6 +82,8 @@ This repository will hold issues or requests related to current or new tools.
   
 </details>
 
+***
+
 ### **Migrate RSC to the Cloud**
 [Repository Link](https://github.ibm.com/systems-storage-tools/tools-issues-requests/issues/12)
 </br>
@@ -94,6 +102,8 @@ This repository will hold issues or requests related to current or new tools.
     * Description of Milestone 4
   
 </details>
+
+***
 
 ### **Tools Team Notification Tool**
 [Repository Link](https://github.ibm.com/systems-storage-tools/tools-issues-requests/issues/11)
